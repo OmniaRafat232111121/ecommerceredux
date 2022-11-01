@@ -20,7 +20,7 @@ const ProductListing = () => {
         fetchProducts()
     },[])
  
-    //console.log("products: ",products)
+    console.log("products: ",products)
   return (
     <div className='container grid grid-cols-3'>
       <h1>ProductListing</h1>
