@@ -1,0 +1,25 @@
+import { ActionTypes } from "../typess/action-types";
+const intialState = {
+  products: [],
+};
+
+export const productsReducer = (state = intialState, { type, payload }) => {
+  switch (type) {
+    case ActionTypes.SET_PRODUCT:
+      return { ...state, products: payload };
+    default:
+      return state;
+  }
+};
+
+export const selectedProductsReducer = (state = {}, { type, payload }) => {
+  console.log(type);
+  switch (type) {
+    case ActionTypes.SELECTED_PRODUCT:
+      return { ...state, ...payload };
+    case ActionTypes.:
+      return {};
+    default:
+      return state;
+  }
+};
